@@ -7,7 +7,7 @@ public class Main {
 		for (int i = 0; i < enemyTankCount; ++i) {
 			tf.enemies.add(new Tank(40 + i * 40, 60, Dir.DOWN, tf, Group.BAD));
 		}
-		new Thread(() -> new Audio("audio/war1.wav").loop()).start();
+//		new Thread(() -> new Audio("audio/war1.wav").loop()).start();
 
 		while (true) {
 			Thread.sleep(25);
