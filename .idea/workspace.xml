@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99ee96e2-ccc0-48ad-b470-7f46529ab9f6" name="Default Changelist" comment="未加入对主战坦克的碰撞检测">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Audio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Bullet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Bullet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/DefaultFireStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Dir.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Explode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/FireStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/FourDirFireStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Group.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/ImageUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/META-INF/tankwar.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/PropertyMgr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/ResourceMgr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Tank$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/Tank.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/TankFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/TankFrame$MyKeyListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/TankFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/audio/explode.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/audio/tank_fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/audio/tank_move.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/audio/war1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/BadTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/BadTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/GoodTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/GoodTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/bulletU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/e9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/missileLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/missileLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/missileRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/missileRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/square0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/square1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/square2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/square3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/square4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/square5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/image/square6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/audio/explode.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/audio/tank_fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/audio/tank_move.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/audio/war1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/BadTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/BadTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/GoodTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/GoodTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/bulletU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/e9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/missileLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/missileLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/missileRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/missileRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/square0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/square1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/square2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/square3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/square4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/square5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tankwar/main/resource/image/square6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/tankwar/META-INF/tankwar.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/tankwar/PropertyMgrTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DefaultFireStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dir.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Explode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FireStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FourDirFireStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PropertyMgr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ResourceMgr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TankFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/audio/explode.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/audio/tank_fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/audio/tank_move.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/audio/war1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/BadTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/BadTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/GoodTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/GoodTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/bulletU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/e9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/missileLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/missileLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/missileRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/missileRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/square0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/square1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/square2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/square3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/square4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/square5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/image/square6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tankwar.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="tankwar" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nxuii1vnEMN6CDabWCZFLCOff6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEAworkspace\project\tankwar\src\main\resource" />
+      <recent name="E:\IDEAworkspace\project\tankwar\src\main\java" />
+      <recent name="E:\IDEAworkspace\project\tankwar\src\main\resource\image" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="tankwar" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertyMgrTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tankwar" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PropertyMgrTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertyMgrTest.getInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tankwar" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PropertyMgrTest" />
+      <option name="METHOD_NAME" value="getInt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="junit-4.12.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PropertyMgrTest" />
+        <item itemvalue="JAR Application.junit-4.12.jar" />
+        <item itemvalue="JUnit.PropertyMgrTest.getInt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99ee96e2-ccc0-48ad-b470-7f46529ab9f6" name="Default Changelist" comment="" />
+      <created>1612344191407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612344191407</updated>
+      <workItem from="1612344193561" duration="389000" />
+      <workItem from="1612344608506" duration="11914000" />
+      <workItem from="1612514574988" duration="44000" />
+      <workItem from="1612544165541" duration="297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="未加入对主战坦克的碰撞检测" />
+    <option name="LAST_COMMIT_MESSAGE" value="未加入对主战坦克的碰撞检测" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612348153064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612348153064" />
+    <state x="497" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612345123237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="497" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1612345123237" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1612369597918">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1612369597918" />
+    <state x="372" y="4" key="CommitChangelistDialog2" timestamp="1612544429989">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612544429989" />
+    <state x="534" y="126" key="FileChooserDialogImpl" timestamp="1612544257044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="534" y="126" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1612544257044" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1612544430004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612544430004" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1612544430004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612544430004" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1612544430004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612544430004" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1612544430004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612544430004" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1612372591024">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612372591024" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1612372591024">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612372591024" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1612372591024">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612372591024" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1612372591024">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612372591024" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1612368889435">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612368889435" />
+    <state x="400" y="185" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1612365285333">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="400" y="185" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1612365285333" />
+    <state x="469" y="89" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612347975218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="469" y="89" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1612347975218" />
+    <state x="178" y="22" key="new project wizard" timestamp="1612345668959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1612345668959" />
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1612347054400">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1612347054400" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bullet.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tankwar$Main.ic" NAME="Main Coverage Results" MODIFIED="1612368640027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
